@@ -7,7 +7,8 @@ A comprehensive toolkit for downloading datasets and generating ground truth tag
 ### Prerequisites
 
 ```bash
-pip install openai tiktoken datasets huggingface_hub requests
+create a new env
+pip install -r requirements.txt
 ```
 
 ### Step 1: Download Datasets
