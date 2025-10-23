@@ -12,7 +12,7 @@ OUTPUT_DIR="${INPUT_DIR}/tagged_data"
 
 # Model
 MODEL="gpt-4o"
-MAX_SAMPLES=2 # How many samples(maximun) to process per file
+MAX_SAMPLES=2000 # How many samples(maximun) to process per file
 
 
 TAGGER_SCRIPT="../gpt_infer/gpt_tagger.py"
