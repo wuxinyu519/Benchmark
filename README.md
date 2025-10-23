@@ -33,8 +33,8 @@ bash gpt_tagger.sh
 - `API_KEY`: Your OpenAI API key (required)
 - `MODEL`: GPT model to use (default: gpt-4o)
 - `MAX_SAMPLES`: Samples to process per file (default: 2000)
-- `INPUT_DIR`: Input directory (default: ../data)
-- `OUTPUT_DIR`: Output directory (default: tagged_data)
+- `INPUT_DIR`: Input directory (default: data)
+- `OUTPUT_DIR`: Output directory (default: data/tagged_data)
 
 ## Project Structure
 
