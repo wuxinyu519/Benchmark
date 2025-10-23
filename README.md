@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 ```bash
 cd scripts
-bash data_loader.sh
+sh data_loader.sh
 ```
 
 **Main Parameters** (edit in `data_loader.sh`):
@@ -26,7 +26,7 @@ bash data_loader.sh
 
 ```bash
 cd scripts
-bash gpt_tagger.sh
+sh gpt_tagger.sh
 ```
 
 **Main Parameters** (edit in `gpt_tagger.sh`):
