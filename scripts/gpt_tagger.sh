@@ -4,7 +4,6 @@
 
 # OpenAI API Key
 API_KEY="You-GPT-API-KEY-Here"
-
 # Dir
 INPUT_DIR="../data"
 OUTPUT_DIR="${INPUT_DIR}/tagged_data"

@@ -52,7 +52,8 @@ benchmark/
 
 ## Features
 
-- **Automatic Dataset Type Detection**: Detects dataset types (code, math, PII, toxic, etc.) and uses specialized prompts
+- **Automatic Dataset Type Detection**: Detects dataset types (code, math, PII, toxic, etc.) and uses specialized safety/context prompts
+- **Dynamic Perspective Tagging**: Lets the LLM choose useful labeling dimensions for each prompt instead of forcing a fixed tag schema
 - **Checkpoint Resumption**: Saves progress every 5 samples - automatically resumes if interrupted
 - **Token Truncation**: For long texts (>600 tokens), keeps first 300 + last 300 tokens to reduce costs
 
@@ -68,11 +69,9 @@ benchmark/
 {
   "prompt": "instruction text",
   "ground_truth": [
-    {"tag": "Domain", "explanation": "..."},
-    {"tag": "Task Type", "explanation": "..."},
-    {"tag": "Difficulty", "explanation": "..."},
-    {"tag": "Language", "explanation": "..."},
-    {"tag": "Topic 1", "explanation": "..."}
+    {"perspective": "Intent", "tag": "...", "explanation": "..."},
+    {"perspective": "Required Capability", "tag": "...", "explanation": "..."},
+    {"perspective": "Risk Type", "tag": "...", "explanation": "..."}
   ]
 }
 ```
@@ -89,4 +88,3 @@ benchmark/
 | Toxic | toxic-chat |
 | Company confidential | contract |
 | harmful | LLM-LAT/harmful-dataset |
-
